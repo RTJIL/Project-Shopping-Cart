@@ -1,7 +1,7 @@
 import styles from './HomeInfo.module.css';
 import CustomButton from '../Button/CustomButton';
-import { FaGithub } from "react-icons/fa";
-import JikanApi from '/src/assets/JikanApi.png'
+import { FaGithub } from 'react-icons/fa';
+import JikanApi from '/src/assets/JikanApi.png';
 
 const HomeInfo = () => {
   return (
@@ -16,8 +16,16 @@ const HomeInfo = () => {
         <div style={{ padding: '20px' }}>Enjoy😁</div>
       </div>
       <div className={styles.links}>
-        <CustomButton src={<FaGithub size={'1.6rem'} color='black'/>} title={'Davydov Artem'}/>
-        <CustomButton src={JikanApi} title={'Jikan API'}/>
+        <CustomButton
+          src={<FaGithub size={'1.6rem'} color="black" />}
+          title={'Davydov Artem'}
+          link={'https://github.com/RTJIL'}
+        />
+        <CustomButton
+          src={JikanApi}
+          title={'Jikan API'}
+          link={'https://jikan.moe/'}
+        />
       </div>
     </div>
   );

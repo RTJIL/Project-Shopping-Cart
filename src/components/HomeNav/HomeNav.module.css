@@ -9,3 +9,18 @@
   flex-direction: column;
   gap: 1rem;
 }
+
+/* .h3 {
+  animation: move 5s ease-in-out infinite;
+  will-change: all;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    color: white;
+  }
+  50% {
+    color: rgb(15, 16, 25);
+  }
+} */

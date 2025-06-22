@@ -1,10 +1,14 @@
 import styles from './CustomButton.module.css';
 
-const CustomButton = ({ src, title }) => {
+const CustomButton = ({ src, title, link }) => {
   const isElement = typeof src === 'object' && src !== null;
 
+  const handleCklick = () => {
+    window.open(link)
+  }
+
   return (
-    <button className={styles.button}>
+    <button className={styles.button} onClick={handleCklick}>
       {isElement ? (
         <span>{src}</span>
       ) : (
