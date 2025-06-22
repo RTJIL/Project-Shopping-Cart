@@ -5,13 +5,15 @@ import styles from './Home.module.css';
 
 //components
 import Header from '../../components/Header/Header';
-import Background from '../../components/Background/Background';
+import Background from '../../components/HomeBackground/Background';
+import HomeContent from '../../components/HomeContent/HomeContent';
 
 const Home = () => {
   return (
     <div className={styles.container}>
       <Header />
       <Background />
+      <HomeContent />
     </div>
   );
 };

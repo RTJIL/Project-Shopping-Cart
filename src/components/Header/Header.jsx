@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
 import SearchBar from '../SearchBar/SearchBar';
 import Logo from '../Logo/Logo';
-import WatchLater from '../ShopingCart/WatchLater';
+import WatchLater from '../WatchLater/WatchLater';
 
 const Header = () => {
   return (

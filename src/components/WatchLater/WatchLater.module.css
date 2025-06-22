@@ -1,0 +1,16 @@
+.container {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}

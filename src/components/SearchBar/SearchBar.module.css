@@ -8,6 +8,10 @@
   /* background-color: aqua; */
 }
 
+.searchBar:focus {
+  outline: none;
+}
+
 .expand {
   animation: expandBounce 0.3s ease-in forwards;
   will-change: width;
