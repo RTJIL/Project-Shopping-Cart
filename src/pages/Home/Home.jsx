@@ -11,8 +11,8 @@ import HomeContent from '../../components/HomeContent/HomeContent';
 const Home = () => {
   return (
     <div className={styles.container}>
-      <Header />
       <Background />
+      <Header />
       <HomeContent />
     </div>
   );

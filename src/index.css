@@ -1,3 +1,12 @@
+/*index.css*/
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -14,14 +23,11 @@
 
 body {
   margin: 0;
-  min-width: 100vw;
-  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #root {
-  margin: 0;
   display: flex;
-  position: relative;
-  min-width: 100vw;
-  height: auto;
+  flex-direction: column;
 }

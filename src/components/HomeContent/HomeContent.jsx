@@ -1,4 +1,4 @@
-import styles from './HomeContent.module.css'
+import styles from './HomeContent.module.css';
 import HomeInfo from '../HomeInfo/HomeInfo';
 import HomeNav from '../HomeNav/HomeNav';
 

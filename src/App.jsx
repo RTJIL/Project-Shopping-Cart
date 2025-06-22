@@ -1,3 +1,5 @@
+//App.jsx
+
 import Home from "./pages/Home/Home";
 
 function App() {
