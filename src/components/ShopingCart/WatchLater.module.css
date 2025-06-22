@@ -1,0 +1,13 @@
+.container {
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform .2s ease-in-out
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}

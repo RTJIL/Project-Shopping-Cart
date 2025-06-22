@@ -1,0 +1,67 @@
+/* SearchBar.module.css */
+.container {
+  position: relative;
+  width: 20%;
+  height: fit-content;
+  transition: width 0.3s ease;
+
+  /* background-color: aqua; */
+}
+
+.expand {
+  animation: expandBounce 0.3s ease-in forwards;
+  will-change: width;
+}
+
+.shrink {
+  animation: shrinkBounce 0.3s ease-out forwards;
+  will-change: width;
+}
+
+@keyframes expandBounce {
+  from {
+    width: 20%;
+  }
+  50% {
+    width: 32%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes shrinkBounce {
+  from {
+    width: 30%;
+  }
+
+  50% {
+    width: 18%;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+
+.searchIcon {
+  color: rgb(59, 59, 59);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.searchBar {
+  background-color: rgb(255, 255, 255);
+  color: rgb(59, 59, 59);
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-style: none;
+}
