@@ -1,0 +1,19 @@
+/*Library.module.css*/
+
+.libraryContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-align: center;
+}

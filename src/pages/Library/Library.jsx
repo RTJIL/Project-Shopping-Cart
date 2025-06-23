@@ -1,22 +1,29 @@
+//Library.jsx
+
 import styles from './Library.module.css';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import LibraryContent from '../../components/LibraryContent/LibraryContent';
 
 const variants = {
-  initial: { opacity: 0, y: 0 },
-  animate: { opacity: 1, y: 30 },
-  exit: { opacity: 0, y: 0 },
+  initial: { opacity: 0, x: -30 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -30 },
 };
 
 const Library = () => {
   return (
     <motion.div
+      className={styles.libraryContainer}
       variants={variants}
       initial="initial"
       animate="animate"
       exit="exit"
       transition={{ duration: 0.4, ease: 'easeInOut' }}
+      onAnimationStart={() => (document.body.style.overflow = 'hidden')}
+      onAnimationComplete={() => (document.body.style.overflow = '')}
     >
-      <h1>Library Page</h1>
+      <LibraryContent />
     </motion.div>
   );
 };

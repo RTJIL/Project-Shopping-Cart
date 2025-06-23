@@ -1,0 +1,17 @@
+/*LibraryContent.module.css*/
+
+.libraryContentContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 670px) {
+  .libraryContentContainer {
+    justify-content: center;
+    padding: 0 10px;
+  }
+}

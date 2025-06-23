@@ -1,3 +1,5 @@
+//Header.jsx
+
 import styles from './Header.module.css';
 import SearchBar from '../SearchBar/SearchBar';
 import Logo from '../Logo/Logo';

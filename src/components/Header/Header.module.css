@@ -1,6 +1,9 @@
 .headerContainer {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
 }

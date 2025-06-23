@@ -1,0 +1,47 @@
+/*LibraryCard.module.css*/
+
+.libraryCardContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  width: 100%; 
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  width: 100%; /* fills the card container width */
+  height: 200px; /* fix a height that fits your design */
+  object-fit: cover; /* covers container, crops if needed, keeps aspect ratio */
+  border-radius: 8px 8px 0 0; /* rounded corners on top if your card has border radius */
+  display: block;
+}
+
+.cardContent {
+  padding: 12px;
+}
+
+.cardTitle {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.cardGenre,
+.cardScore {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
