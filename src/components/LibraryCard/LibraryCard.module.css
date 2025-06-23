@@ -45,3 +45,33 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.add {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.add:hover {
+  background-color: #004bcc;
+}
+
+.remove {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.remove:hover {
+  background-color: darkred;
+}
