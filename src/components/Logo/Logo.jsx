@@ -3,11 +3,13 @@ import styles from './Logo.module.css';
 
 const Logo = () => {
   return (
-    <div className={styles.logoContainer}>
+    <button className={styles.logoContainer} onClick={() => {
+      window.open('http://localhost:5173/')
+    }}>
       <span>ODIN</span>
       <img src={logo} alt="logo" style={{ height: '4rem', display: 'block' }} />
       <span>ROLL</span>
-    </div>
+    </button>
   );
 };
 

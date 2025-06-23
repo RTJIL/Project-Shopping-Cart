@@ -1,10 +1,15 @@
+//CustomButton.jsx
+
 import styles from './CustomButton.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const CustomButton = ({ src, title, link }) => {
   const isElement = typeof src === 'object' && src !== null;
+  const isLink = link.startsWith('/')
+  const navigate = useNavigate();
 
   const handleCklick = () => {
-    window.open(link)
+    isLink ? navigate(link) : window.open(link)
   }
 
   return (

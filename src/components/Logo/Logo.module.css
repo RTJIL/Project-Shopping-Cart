@@ -8,6 +8,8 @@
   cursor: pointer;
   margin-left: 10px;
   will-change: transform;
+  border-style: none;
+  background-color: transparent;
 
   /* background-color: rgb(0, 64, 120); */
 }

@@ -1,18 +1,20 @@
 import styles from './HomeNav.module.css';
 import Button from '../Button/CustomButton';
-import { GiPerspectiveDiceSixFacesRandom } from 'react-icons/gi';
+import { FaRandom } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
-import { FaBook } from "react-icons/fa";
-import { ImFilm } from "react-icons/im";
+import { FaTrophy } from "react-icons/fa";
+import { MdVideoLibrary } from "react-icons/md";
+import { FaMedal } from "react-icons/fa";
 
 const HomeNav = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.homeNavContainer}>
       <h3 className={styles.h3}>Quick Navigation</h3>
-      <Button src={<GiPerspectiveDiceSixFacesRandom size={'1.6rem'}/>} title={'Random'} />
-      <Button src={<ImFilm size={'1.6rem'}/>} title={'Top Anime'} />
-      <Button src={<FaBook size={'1.6rem'}/>} title={'Top Manga'} />
-      <Button src={<IoMdPerson size={'1.6rem'}/>} title={'Top Characters'} />
+      <Button src={<MdVideoLibrary size={'1.6rem'}/>} title={'Library'} link={'/library'}/>
+      <Button src={<FaRandom size={'1.6rem'}/>} title={'Random'} link={'/library/random'}/>
+      <Button src={<FaTrophy size={'1.6rem'}/>} title={'Top Anime'} link={'/library/top-anime'}/>
+      <Button src={<FaMedal size={'1.6rem'}/>} title={'Top Manga'} link={'/library/top-manga'}/>
+      <Button src={<IoMdPerson size={'1.6rem'}/>} title={'Top Characters'} link={'/library/top-characters'}/>
     </div>
   );
 };

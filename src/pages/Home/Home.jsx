@@ -8,13 +8,22 @@ import Header from '../../components/Header/Header';
 import Background from '../../components/HomeBackground/Background';
 import HomeContent from '../../components/HomeContent/HomeContent';
 
+//extra features
+import { motion } from 'framer-motion';
+
+const variants = {
+  initial: { opacity: 0, y: 0 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 0 },
+};
+
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <motion.div className={styles.homeContainer} variants={variants} initial='initial' animate='animate' exit='exit'>
       <Background />
       <Header />
       <HomeContent />
-    </div>
+    </motion.div>
   );
 };
 

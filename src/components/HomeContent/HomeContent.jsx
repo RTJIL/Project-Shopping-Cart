@@ -4,7 +4,7 @@ import HomeNav from '../HomeNav/HomeNav';
 
 const HomeContent = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.homeContentContainer}>
       <HomeInfo />
       <HomeNav />
     </div>

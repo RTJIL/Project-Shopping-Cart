@@ -5,15 +5,15 @@ import JikanApi from '/src/assets/JikanApi.png';
 
 const HomeInfo = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.homeInfoContainer}>
       <div className={styles.description}>
         <h1 className={styles.h1}>Odin Roll</h1>
-        <span style={{ paddingTop: '20px' }}>
+        <span style={{ marginTop: '20px' }}>
           This is a fan-made demo. No anime is hosted or streamed here. All
           content belongs to its rightful owners. Support the official releases.
-          No piracy - just anime love!
+          No piracy just anime love!
         </span>
-        <div style={{ padding: '20px' }}>Enjoy😁</div>
+        <div style={{ marginTop: '20px' }}>Enjoy😁</div>
       </div>
       <div className={styles.links}>
         <CustomButton

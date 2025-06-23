@@ -1,17 +1,18 @@
-.container {
+.homeContentContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   flex: 1;
   height: 100%;
 
   /* background-color: rgb(66, 66, 66); */
 }
 
-@media (max-width: 640px) {
-  .container {
+@media (max-width: 670px) {
+  .homeContentContainer {
     justify-content: center;
+    padding: 0;
   }
 }
